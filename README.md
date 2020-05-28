@@ -5,7 +5,7 @@ Luckily here, this web page is quite simple. The links only refer to further dow
 
 Another major concern is accessibility accross devices. Our links may not be large enough for mobile phone users, but again the site doesn't lose functionality from that. However, I did add a meta name "viewport" to control scaling.
 
-Moving on from accessibility concerns, the html follows a logical structure but is not neatly formatted. I added a missing div id in the content section and reformatted the code to make it more legible. I added a title to the page "Horiseon Solutions", an abbrevation of "Horiseon Social Solutions Services" found at the footer, which fits neatly on a tab.  Speaking of the footer, it had a h2 tag. Changed to h4 as it is the 4 h tag in the html
+Moving on from accessibility concerns, the html follows a logical structure but is not neatly formatted. I added a missing div id in the content section, removed a redundant /img tag, and reformatted the code to make it more legible. I added a title to the page "Horiseon Solutions", an abbrevation of "Horiseon Social Solutions Services" found at the footer, which fits neatly on a tab.  Speaking of the footer, it had a h2 tag. Changed to h4 as it is the 4 h tag in the html
 
 The CSS had some redundancies to deal with as well. In the html, the content section comes before the benefits section, but in the CSS the benefits section comes in the middle of the content. So I reoganized that to align it with the html and removed some redundancies. 3 different benefit selectors had the same tags, and the benefit headers also had 3 individual selectors with the same tags, the same was true for the following benefits section
 
@@ -33,7 +33,7 @@ Speaking of the footer, it had a h2 tag. Changed to h4 as it is the 4 h tag in t
 Sure I find semantic HTML elements, what does this even mean?
 
  WHEN I view the source code
-THEN I find semantic HTML elements
+THEN I find semantic HTML elements   way too many devs
 
 I think its logical. It starts at the top, then goes down past the main picture .hero  to the content with the sidebar benefits after that just before the footer. Seems independ of style an positioning, but I didn't really do anything about it
 
