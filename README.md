@@ -1,45 +1,39 @@
-# 01 HTML CSS Git: Code Refactor
+<!-- Is my methodology important? Am i over sharing? -->
+This code refactor aimed to clean up the source code and improve accessibility. Web accessibility finds itself at the crossroads of web content, user agents, and authoring tools. These components inter-relate and support each other, and as websites become more sophisticated so too do accessibility concerns. My essential principles were to address image alt attributes, keyboard accessibility, text to speech and vise versa, and formatting for multiple devices.  
 
-One of the most common tasks for front-end and junior developers is to take existing code and refactor it to either meet a certain set of standards or implement a new technology. Web accessibility is an increasingly important consideration for businesses, ensuring that people with disabilities or socio-economic restrictions have access to their website, and helping them avoid litigation.
+Luckily here, this web page is quite simple. The links only refer to further down the page, and our keyboard commands can navigate that for us. So mouse input concerns are covered. There is no audio so no need to concerns ourselves with such things, and as long as our h tags and p tags are set properly text to speech will work. Our images however are all missing alt tags. For all but the .hero image that is an easy fix, I simply used their descriptive file names as alt text as they seemed appropraite. For the .hero I added a title attribute, as the image is not represented directly in the html. According to the W3C, the title attribute serves much of the same purpose as the alt attribute. 
 
-Your task is to refactor an existing webpage to make it accessible. An important rule to follow when working with someone else's code is the Scout Rule:
+Another major concern is accessibility accross devices. Our links may not be large enough for mobile phone users, but again the site doesn't lose functionality from that. However, I did add a meta name "viewport" to control scaling.
 
-> Always leave the code you are editing a little cleaner than you found it.
+Moving on from accessibility concerns, the html follows a logical structure but is not neatly formatted. I added spacing between lines and fixed indendation to make the code more legible. I added a title to the page "Horiseon Solutions", an abbrevation of "Horiseon Social Solutions Services" found at the footer, which fits neatly on a tab.
 
+<!-- 
+to do
 To impress clients, you should always go the extra mile and improve their codebase for long term sustainability. Ensure that all links are functioning correctly and clean up the CSS to make it more efficient, consolidating CSS selectors and properties, organizing them to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
 
-## User Story
+Is this a true statement? Cause I said it --- and as long as our h tags and p tags are set properly text to speech will work
 
-```
-AS A marketing agency
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines
-```
 
-## Acceptance Criteria
+make sure its ok to use title for the image .hero
+should i be more specific (e.g. i used double spacing to improve legibility)? less?
 
-```
-GIVEN a webpage meets accessibility standards
-WHEN I view the source code
-THEN I find semantic HTML elements
-WHEN I view the structure of the HTML elements
-THEN I find that the elements follow a logical structure independent of styling and positioning
-WHEN I view the image elements
-THEN I find accessible alt attributes
+Did not cover these directly in the README. 
+
+Headers are in order, but they also are reused within div sections, is that best practice?
+
 WHEN I view the heading attributes
 THEN they fall in sequential order
-WHEN I view the title element
-THEN I find a concise, descriptive title
-```
 
-## Review
 
-You are required to submit the following for review:
+Sure I find semantic HTML elements, what does this even mean?
 
-* The URL of the deployed application.
+ WHEN I view the source code
+THEN I find semantic HTML elements
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+I think its logical. It starts at the top, then goes down past the main picture .hero  to the content with the sidebar benefits after that just before the footer. Seems independ of style an positioning, but I didn't really do anything about it
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-# code_factor_hori
+WHEN I view the structure of the HTML elements
+THEN I find that the elements follow a logical structure independent of styling and positioning
+
+-->
+
