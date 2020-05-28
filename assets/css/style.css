@@ -10,6 +10,8 @@ body {
     background-color: #d9dcd6;
 }
 
+/* I think I can change this so that .header and .header div are the same. The html uses a class to make things float left or right, if I delete those classes and simply add the float to the classes that need it, rather than have a class case being added to another class, i think it will work the same */
+
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -71,12 +73,33 @@ p {
     margin-left: 25px;
 }
 
+
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+.contentbox {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.contentbox img {
+    max-height: 200px;
+}
+
+.contentbox h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+/* In index.html the content div comes before the benefits, and in the CSS the content section was split by the benefits section. I reorganized so that the CSS reads in the same structure as the html and moved the content into its appropriate section */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -88,106 +111,26 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+
+/* 3 different benefit selectors had the same tags, and the benefit headers also had 3 individual selectors with the same tags. I consolidated  */
+
+
+/*  I notice that my webpage's benefit box does not extend down all the way. The original didn't quite make it as far as the other box, but mine is about twice as far from the bottom */
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 .footer {
@@ -197,6 +140,7 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+/*  tried to consolidate these last two. if the .footer font size is set to 20px i thought i would cover the h2 there, but the text gets a bit bigger when i do that. why? */
+.footer h4 {
     font-size: 20px;
 }
