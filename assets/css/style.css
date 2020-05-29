@@ -1,5 +1,3 @@
-
-/* aterix is a wild card */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -10,24 +8,24 @@ body {
     background-color: #d9dcd6;
 }
 
-/* can i simplify the header at all? */
-.header {
+
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
-    color: #d9dcd6q ;
+header .seo {
+    color: #d9dcd6;
 }
 
-.header div {
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -35,11 +33,11 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+nav ul {
     list-style-type: none;
 }
 
-.header div ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -53,14 +51,19 @@ p {
     font-size: 16px;
 }
 
-.hero {
-    height: 800px;
+figure {
+    height:800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+}
+
+figure img {
+    height: 800px;
+    width: 100%;
     background-size: cover;
     background-position: center;
 }
+
 
 .float-left {
     float: left;
@@ -73,13 +76,13 @@ p {
 }
 
 
-.content {
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.contentbox {
+main section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -88,18 +91,17 @@ p {
     color: #ffffff;
 }
 
-.contentbox img {
+main img {
     max-height: 200px;
 }
 
-.contentbox h2 {
+h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
 
-/* In index.html the content div comes before the benefits, and in the CSS the content section was split by the benefits section. I reorganized so that the CSS reads in the same structure as the html and moved the content into its appropriate section */
-.benefits {
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -110,36 +112,32 @@ p {
     background-color: #2589bd;
 }
 
-
-/* 3 different benefit selectors had the same tags, and the benefit headers also had 3 individual selectors with the same tags. I consolidated  */
-
-
-/*  I notice that my webpage's benefit box does not extend down all the way. The original didn't quite make it as far as the other box, but mine is about twice as far from the bottom */
-.benefit {
+aside section {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit img {
+aside img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 
 }
 
-.footer {
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-/*  tried to consolidate these last two. if the .footer font size is set to 20px i thought i would cover the h2 there, but the text gets a bit bigger when i do that. why? */
-.footer h4 {
+
+h4 {
     font-size: 20px;
 }

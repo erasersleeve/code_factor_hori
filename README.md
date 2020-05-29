@@ -24,7 +24,7 @@ should i be more specific (e.g. i used double spacing to improve legibility)? le
 
 Did not cover these directly in the README. 
 
-Headers are in order, but they also are reused within div sections, is that best practice?
+
 
 WHEN I view the heading attributes
 THEN they fall in sequential order
